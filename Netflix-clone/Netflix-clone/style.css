@@ -1,0 +1,355 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),  url(./images/bgimage.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    
+}
+.nav-bar{
+    background:none;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+.nav-left img{
+height: 78px;
+width: 185px;
+}
+.nav-left{
+    display: flex;
+    float: left;
+    margin-left: 150px;
+}
+.drop-down{
+    margin-right: 20px;
+}
+.drop-down select{
+    width: 120px;
+    height: 30px;
+    border-radius: 3%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+.nav-right button{
+    height: 30px;
+    width: 80px;
+    background-color: #db0001;
+    color: white;
+    margin-right: 20px;
+    border: none;
+    border-radius: 2%;
+}
+.nav-right{
+    display: flex;
+    float: right;
+    margin:20px 150px 0px 0px;
+}
+
+.content{
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: 25%;
+    margin-top: 50px;
+}
+.content h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.content h3{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.content p{
+    font-size:22px;
+}
+.email-login{
+    display: flex;
+    margin-left: 200px;
+}
+.email-login button{
+    height: 52px;
+    width: 200px;
+    background-color: #db0001;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.email-login input{
+    height: 49px;
+    width: 330px;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+}
+
+.services{
+    padding: 50px 12%;
+    font-size: 20px;
+}
+.services h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+.row-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0;
+}
+.col-1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.col-2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.col-2 img{
+  width: 90%;
+  display: block;
+}
+
+.questions{
+    text-align: center;
+    font-size: 20px;
+}
+.questions h1{
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.que-list{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.que-list li label{
+    display: flex;
+    align-items: center;
+    padding: 26px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.que-list li{
+    list-style: none;
+    width: 100%;
+    padding: 6px;
+}
+label::after{
+    content: '+';
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.que-list .text{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.que-list input[type="radio"]:checked +label+.text{
+max-height: 600px;
+padding: 15px 20px;
+}
+.que-list input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+.email-log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.email-log button{
+    max-width: 600px;
+    height: 50px;
+    width: 200px;
+    background-color: #db0001;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.email-log input {
+    height: 50px;
+    width: 330px;
+    color: #fff;
+    background-color: rgb(38, 37, 37);
+    border-radius: 4px;
+    border: none;
+    
+    margin-right: 5px;
+}
+small{
+    font-size: 20px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: rgba(255,255,255,0.7);
+}
+.footer p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.column{
+flex-basis: 25%;
+flex-grow: 1;
+margin-bottom: 20px;
+}
+.row{
+    display:flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.row a{
+    display: block;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer select{
+    background-color: #000;
+    color: rgba(255,255,255,0.7);
+    padding: 7px 25px;
+    border-radius: 3%;
+}
+.copywright{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+    }
+    .content h1 {
+        font-size: 2rem; 
+    }
+
+    .content h3 {
+        font-size: 18px; 
+    }
+
+    .content p {
+        font-size: 16px; 
+    }
+    .nav-left {
+        margin-left: 10px;
+    }
+
+    .nav-right {
+        margin: 20px 10px 0 0;
+    }
+
+    .content {
+        left: 5%;
+        top: 15%;
+    }
+
+    .email-login {
+        margin-left: 10px;
+    }
+
+    .services {
+        padding: 50px 5%;
+    }
+
+    .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .que-list li label {
+        padding: 16px;
+        font-size: 20px;
+    }
+.email-login{
+    margin: 0;
+}
+    .footer {
+        padding: 50px 5% 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-left img {
+        height: 50px;
+        width: 120px;
+    }
+
+    .nav-left {
+        margin-left: 10px;
+    }
+
+    .nav-right {
+        margin: 20px 10px 0 0;
+    }
+
+    .content {
+        left: 5%;
+        top: 15%;
+    }
+
+    .email-login {
+        margin-left: 10px;
+    }
+
+    .services {
+        padding: 50px 5%;
+    }
+
+    .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .que-list li label {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 50px 5% 10px;
+    }
+
+    .email-log button {
+        max-width: 90%;
+    }
+
+    .email-log input {
+        width: 90%;
+    }
+
+    .footer select {
+        padding: 7px 15px;
+    }
+}
